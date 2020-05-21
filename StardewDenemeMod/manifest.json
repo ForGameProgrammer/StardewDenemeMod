@@ -1,0 +1,10 @@
+﻿{
+  "Name": "Deneme Mod",
+  "Author": "JuuKen",
+  "Version": "1.0.0",
+  "Description": "Tamemen deneme amaçlı bir mod",
+  "UniqueID": "JuuKen.StardewDenemeMod",
+  "EntryDll": "StardewDenemeMod.dll",
+  "MinimumApiVersion": "2.10.0",
+  "UpdateKeys": []
+}
