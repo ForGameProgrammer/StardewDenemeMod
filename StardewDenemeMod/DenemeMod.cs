@@ -38,18 +38,22 @@ namespace StardewDenemeMod
                     ShowBannerMessage($"Stamina yenilendi.");
                     break;
                 case SButton.Multiply:
-                    Game1.isTimePaused = !Game1.isTimePaused;
-                    ShowBannerMessage($"Zaman {(Game1.isTimePaused ? "durduruldu" : "devam ediyor")}.");
+                    Game1.timeOfDay += 100;
+                    ShowBannerMessage($"Zaman ileri alındı.");
+                    break;
+                case SButton.Divide:
+                    Game1.timeOfDay -= 100;
+                    ShowBannerMessage($"Zaman geri alındı.");
                     break;
                 case SButton.Add:
                     //Game1.player.addedSpeed += 1;
-                    Game1.player.temporarySpeedBuff += 1;
-                    ShowBannerMessage("1 Hiz arttirildi.");
+                    Game1.player.addedSpeed += 5;
+                    ShowBannerMessage("5 Hiz arttirildi.");
                     break;
                 case SButton.Subtract:
                     //Game1.player.addedSpeed -= 1;
-                    Game1.player.temporarySpeedBuff += 1;
-                    ShowBannerMessage("1 Hiz azaltildi.");
+                    Game1.player.addedSpeed += 5;
+                    ShowBannerMessage("5 Hiz azaltildi.");
                     break;
                 default:
                     break;
